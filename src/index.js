@@ -6,10 +6,14 @@ import './bootstrap.min.css';
 import Main from './main/Main';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <Main />,
-  document.getElementById('root')
-);
+function Maina() {
+  ReactDOM.render(
+    <Main />,
+    document.getElementById('root')
+  );
+}
+
+setInterval(Maina, 1000);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -10,6 +10,7 @@ function Main() {
             <Navbar />
             <div className="container">
                 <h1>This is main</h1>
+                <h1>{new Date().toLocaleTimeString()}</h1>
                 <ShoppingList name="This is props" buttonTitle="The Button"/>
             </div>
         </div>
