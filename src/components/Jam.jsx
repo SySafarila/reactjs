@@ -1,6 +1,7 @@
 import React from 'react';
 
 class Jam extends React.Component {
+    // Set state
     constructor(props) {
         super(props);
         this.state = {
@@ -8,12 +9,14 @@ class Jam extends React.Component {
         };
     }
 
+    // set setState
     detik() {
         this.setState({
             date: new Date().toLocaleTimeString()
         });
     }
 
+    // Start timer
     componentDidMount() {
         this.timer = setInterval(
             () => this.detik(),
@@ -21,6 +24,7 @@ class Jam extends React.Component {
         );
     }
 
+    // Clear timer
     componentWillUnmount() {
         clearInterval(this.timer);
     }
