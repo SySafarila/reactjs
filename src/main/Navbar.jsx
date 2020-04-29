@@ -17,9 +17,15 @@ class Navbar extends React.Component {
     }
 
     handleClick = () => {
-        this.setState({
-            nav: 'collapse navbar-collapse show'
-        });
+        if (this.state.nav === 'collapse navbar-collapse') {
+            this.setState({
+                nav: 'collapse navbar-collapse show'
+            });
+        } else {
+            this.setState({
+                nav: 'collapse navbar-collapse'
+            });
+        }
     }
 
     render() {
