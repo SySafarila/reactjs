@@ -1,6 +1,26 @@
 import React from 'react';
 
 class Video extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            timeRun: new Date().toLocaleTimeString()
+        };
+    }
+
+    tick() {
+        this.setState({
+            timeRun: new Date().toLocaleTimeString()
+        });
+    }
+
+    componentDidMount() {
+        this.timer = setInterval(
+            () => this.tick(),
+            1000
+        );
+    }
+
     render() {
         return (
                 <div className="col-md-3 border p-0 m-1">
@@ -13,6 +33,7 @@ class Video extends React.Component {
                             <h6 className="mb-0">{this.props.title}</h6>
                             <span className="text-muted d-block">{this.props.channel}</span>
                             <span className="text-muted d-block">{this.props.viewsNumber} views · {this.props.time}</span>
+                            <span className="text-muted d-block">{this.state.timeRun}</span>
                         </div>
                     </div>
                 </div>
