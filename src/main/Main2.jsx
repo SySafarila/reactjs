@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import Home from '../components/Home';
 
 function Main2() {
     return(
@@ -9,9 +10,9 @@ function Main2() {
             <Navbar />
                 <Switch>
                     <Route path="/" exact>
-                        <h1 className="pl-2">This is home</h1>
+                        <Home />
                     </Route>
-                    <Route path="/zero" exact>
+                    <Route path="/zero">
                         <h1 className="pl-2">This is zero</h1>
                     </Route>
                     <Route path="/one">

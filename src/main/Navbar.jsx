@@ -30,7 +30,7 @@ class Navbar extends React.Component {
 
     render() {
         return(
-            <nav className="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+            <nav className="navbar navbar-expand-md navbar-light bg-light shadow-sm mb-3">
                 <Link to="/" className="navbar-brand">{this.state.brand}</Link>
                 <button className="navbar-toggler" type="button" onClick={this.handleClick}>
                     <span className="navbar-toggler-icon"></span>
