@@ -5,7 +5,8 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            brand: 'Brand'
+            brand: 'Brand',
+            nav: 'collapse navbar-collapse'
         };
     }
 
@@ -17,18 +18,18 @@ class Navbar extends React.Component {
 
     handleClick = () => {
         this.setState({
-            brand: 'Brand Changed'
+            nav: 'collapse navbar-collapse show'
         });
     }
 
     render() {
         return(
-            <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <nav className="navbar navbar-expand-md navbar-light bg-light shadow-sm">
                 <Link to="/" className="navbar-brand">{this.state.brand}</Link>
                 <button className="navbar-toggler" type="button" onClick={this.handleClick}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse">
+                <div className={this.state.nav}>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
                             <Link to="/" className="nav-link">Home</Link>
