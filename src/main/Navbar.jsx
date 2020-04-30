@@ -46,6 +46,9 @@ class Navbar extends React.Component {
                         <li className="nav-item">
                             <NavLink to="/one" className="nav-link" activeClassName="active font-weight-bold">One</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink to="/video" className="nav-link" activeClassName="active font-weight-bold">Video</NavLink>
+                        </li>
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">

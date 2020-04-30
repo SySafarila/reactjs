@@ -16,6 +16,7 @@ class Home extends React.Component {
                                     <li><Link to="/" className="text-decoration-none">Home</Link></li>
                                     <li><Link to="/zero" className="text-decoration-none">Zero</Link></li>
                                     <li><Link to="/one" className="text-decoration-none">One</Link></li>
+                                    <li><Link to="/video" className="text-decoration-none">Video</Link></li>
                                 </ul>
                             </div>
                         </div>
