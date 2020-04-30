@@ -52,7 +52,7 @@ class Navbar extends React.Component {
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a href="https://google.com" className="nav-link">Google</a>
+                            <a href="https://google.com" className="nav-link" target="_blank" rel="noopener noreferrer">Google</a>
                         </li>
                         <li className="nav-item">
                             <a href="https://github.com/twbs/bootstrap/releases/download/v4.4.1/bootstrap-4.4.1-dist.zip" className="nav-link p-0 pt-1"><button className="btn btn-sm btn-outline-warning btn-block font-weight-bold">Download</button></a>
