@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './bootstrap.min.css';
+// import './bootstrap.min.css';
+import './style.css';
 // import * as serviceWorker from './serviceWorker';
 
+import Main from './mains/Main';
+
 ReactDOM.render(
-  <h1>Hello</h1>,
+  <Main />,
   document.getElementById('root')
 );
 
